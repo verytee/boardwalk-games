@@ -52,6 +52,33 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Button styles */
+
+.custom-button-filled {
+border: 2px solid var(--highlight-color); /* blue border */
+background-color: var(--highlight-color); /* blue background */
+color: white; /* white text */
+}
+
+.custom-button-filled:hover {
+border: 2px solid var(--secondary-color); /* light brown border on hover */
+background-color: var(--secondary-color); /* light brown background on hover */
+color: white; /* white text */
+}
+
+/* Book button styles in header */
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color); /* blue border */
+    padding: 7px 25px; /* adjust padding for better size */
+    color: var(--highlight-color); /* blue text */
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color); /* blue background on hover */
+    color: white; /* white text on hover */
+}
+
 /* Navbar styles */
 
 #navbar {
@@ -68,6 +95,7 @@ h2 {
 #header .lead {
     font-family: var(--secondary-font);
 }
+
 
 /*Service Card Styles */
 
