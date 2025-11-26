@@ -75,6 +75,7 @@ h2 {
     font-weight: bold; /* make card footer text bold */
     color: var(--highlight-color); /* change footer text color to blue */
     background-color: transparent; /*removes default gray background from bootstrap card footer*/
+    transition: color 0.3s ease-in-out; /* smooth color transition on hover */
 }
 
 #services .card {
@@ -97,7 +98,34 @@ h2 {
     padding-bottom: 3rem;
 }
 
+#contact h2 {
+    color: white;
+}
 
+#contact .sub-heading-color {
+    color: var(--highlight-color-light);
+}
+
+#contact i {
+    color: var(--secondary-color);  /* change icon colors to light brown */
+    font-size: 1.2rem; /* increase icon size */
+    margin-right: 15px; /* space between icons and text */
+}
+
+#contact .social-links i {
+    font-size: 1.9rem; /* increase social media icon size */
+    margin: 0 10px; /* space between social media icons */
+    color: var(--highlight-color-light);  /* change icon colors to light blue */
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);  /* change icon color to light brown on hover */
+}
+
+
+#contact .table-dark * { /* wildcard * to target all child elements in the table */
+    background-color: transparent; /* ensure transparent for readability */
+}
 /* grid visualisation CSS for testing */
 
 /* .container,
