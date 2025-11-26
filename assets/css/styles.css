@@ -33,8 +33,14 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    text-transform: uppercase;
+}
 
+h1,
+h2 {
+    text-transform: uppercase;    
+}
+h2 {
+    margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -63,6 +69,19 @@ h3 {
     font-family: var(--secondary-font);
 }
 
+/*Service Card Styles */
+
+#services .card-footer {
+    font-weight: bold; /* make card footer text bold */
+    color: var(--highlight-color); /* change footer text color to blue */
+    background-color: transparent; /*removes default gray background from bootstrap card footer*/
+}
+
+#services .card {
+    margin-bottom: 1.5rem; /* add margin below each card for spacing on smaller screens */
+}
+
+
 
 
 
@@ -77,3 +96,33 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+/* Media Queries always at the bottom of CSS file */
+
+/*tablet and up making the service cards the same height for consistency */
+@media screen and (min-width: 768px) {
+#services .card-body {
+    min-height: 191px; /* set a min height for card bodies on tablet and larger screens */
+    }
+}
+
+/*Large devices (small laptops 992px and up) less space in service cards  */
+@media screen and (min-width: 992px) {
+#services .card-body {
+    min-height: auto; /* remove min height for card bodies on large screens */
+    }
+}
+
+/*XL devices (desktop 1200px and up) service cards alignment  */
+@media screen and (min-width: 1200px) {
+#services .card-body {
+    min-height: 220px; /* service cards the same height for consistency */
+    }
+}
+
+/*XXL devices (1400px and up) service cards alignment*/
+@media screen and (min-width: 1400px) {
+#services .card-body {
+    min-height: 195px; /* service cards the same height for consistency */
+    }
+}
