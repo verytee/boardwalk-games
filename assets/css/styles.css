@@ -118,6 +118,18 @@ color: white; /* white text */
     border: none;
 }
 
+
+/* Get 20% off button styles */
+
+.twenty-off {
+border: 2px solid var(--highlight-color); /* blue border */
+background-color: var(--highlight-color); /* blue background */
+color: white; /* white text */
+display: inline-block;
+width: fit-content;
+padding: 8px 16px;
+}
+
 /* Footer and contact styles */
 
 #contact {
