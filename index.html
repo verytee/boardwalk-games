@@ -21,34 +21,62 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
     <!--    Link to CSS styles  -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+
+<!-- Body with Bootstrap flex classes to ensure footer sticks to bottom of viewport -->
+<body class="d-flex flex-column min-vh-100">
     
     <!-- Navbar include -->
 <div>
-
+Navigation Bar
 </div>
 
-<!-- Header include Boardwalk Games into -->
-<header>
+<!-- Header include carousel -->
 
+    <!-- Emmet sh was header.container>.row>.col-12.col-xl-6*2  -->
+<header class="container">
+    <div class="row">
+        <div class="col-12 col-xl-6">Some placeholder text to see whats up</div>
+        <div class="col-12 col-xl-6">More placeholder text to checkout</div>
+    </div>
 </header>
 
-<!-- Main content include -->
+<!-- Main content holding all key sections of home page. Does not influence grid structure -->
 <main>
-    <!-- Services Section-->
-    <section>
+    <!-- Services Section sh was section.container>.row -->
+  
+    <section class="container">
+        <div class="row">
+            <div class="col-12">Services Section Heading</div>
 
+    <!-- Emmet shorhand for responsive divs .col-12.col-md-6.col-xl-3*4 -->
+
+    <div class="col-12 col-md-6 col-xl-3">Services card</div>
+    <div class="col-12 col-md-6 col-xl-3">Services card</div>
+    <div class="col-12 col-md-6 col-xl-3">Services card</div>
+    <div class="col-12 col-md-6 col-xl-3">Services card</div>
+        </div>
     </section>
 
     <!-- Join our Events section-->
     <section>
-        
+
     </section>
 </main>
 
     <!-- Footer including contact information and opening times -->
-<footer>
-
+<footer class="mt-auto"> <!-- margin top auto to push footer to bottom, works with body class-->
+<div class="container">
+    <!-- justify content center to center the row contents on larger screens -->
+    <div class="row justify-content-center">
+        <div class="col-12">Contact Section Heading</div>
+        
+        <!-- Contact Information -->
+        <!-- Emmet shorthand for .col-12.col-md-6.col-xl-4*2 -->
+        <div class="col-12 col-md-6 col-xl-4">Contact info & social media</div>
+        <!-- Opening Times -->
+        <div class="col-12 col-md-6 col-xl-4">Opening times</div>
+    </div>
+</div>
 </footer> 
 
 
