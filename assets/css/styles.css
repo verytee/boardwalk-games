@@ -119,7 +119,11 @@ color: white; /* white text */
 }
 
 
-/* Get 20% off button styles */
+#success h1.capitalize {
+    text-transform: none !important;    
+}
+
+/* Get 20% off styles */
 
 .twenty-off {
 border: 2px solid var(--highlight-color); /* blue border */
@@ -129,6 +133,7 @@ display: inline-block;
 width: fit-content;
 padding: 8px 16px;
 }
+
 
 /* Footer and contact styles */
 

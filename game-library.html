@@ -224,6 +224,73 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
                 </div>
             </div>
         </section>
+
+    <!-- Reserve a game section-->
+     <!-- action set on the form to provide users with feedback when the form has been submitted.
+                           form data is not actually sent anywhere for this project -->
+    <section id="reserve-game-form" class="container section mb-5">
+      <!-- Full-width header row -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <h2 class="display-6 text-center">Reserve a Game</h2>
+        
+          <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin! 
+            Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
+          </p>
+        <!-- reserve game form -->
+                <form action="success.html" method="GET">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input class="form-control" id="name" name="name" type="text" required>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input class="form-control" id="phone" name="phone" type="number" required>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input class="form-control" id="email" name="email" type="email" required>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-8 mb-3">
+                            <label for="event-type" class="form-label">Select game</label>
+                            <select id="event-type" class="form-select" name="event-type" required>
+                                <option value="" selected>Select</option>
+                                <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                <option value="mystic-woods">Mystic Woods</option>
+                                <option value="captain-gambit">Captain's Gambit</option>
+                                <option value="critter-quest">Critter Quest</option>
+                                <option value="setters-of-catan">Setters of Catan</option>
+                                <option value="monopoly">Monopoly</option>
+                                <option value="exploding-kittens">Exploding Kittens</option>
+                                <option value="cluedo">Cluedo</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-8 mb-3">
+                            <label for="date" class="form-label">Requested date</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="date"
+                                name="date"
+                                placeholder="DD/MM/YYYY"
+                                inputmode="numeric"
+                                pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
+                                maxlength="10"
+                                aria-describedby="dateHelp"
+                                title="Enter date as DD/MM/YYYY"
+                                required>
+                            <div id="dateHelp" class="form-text">Format: DD/MM/YYYY</div>
+                        </div>
+                    </div>
+<div class="col-12 text-end">
+                    <button type="submit" class="btn custom-button-outline mt-3">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
 </main>
 
     <!-- Footer including contact information and opening times -->
