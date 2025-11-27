@@ -1,3 +1,5 @@
+
+
 /* Google Fonts Import */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
@@ -103,6 +105,8 @@ color: white; /* white text */
     font-weight: bold; /* make card footer text bold */
     color: var(--highlight-color); /* change footer text color to blue */
     background-color: transparent; /*removes default gray background from bootstrap card footer*/
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; /* smooth color transition on hover */
 }
 
@@ -130,6 +134,8 @@ border: 2px solid var(--highlight-color); /* blue border */
 background-color: var(--highlight-color); /* blue background */
 color: white; /* white text */
 display: inline-block;
+width: -webkit-fit-content;
+width: -moz-fit-content;
 width: fit-content;
 padding: 8px 16px;
 }
